@@ -169,7 +169,7 @@ object SparkMongoExample {
 
 ```
 
-4) Prepare a pom.xml file for your project
+9. Prepare a pom.xml file for your project
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
