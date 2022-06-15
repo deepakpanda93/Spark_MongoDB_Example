@@ -13,7 +13,7 @@ Access document from MongoDB collection (Read + Write)
 
 MongoDB is a document-based NoSQL database application. Unlike MySQL, it allows data to be stored differently in different documents.
 
-Install mongodb-4.2 on CentOS 7
+Install MongoDB-4.2 on CentOS 7
 
 Step 1: First We need to add the MongoDB Software Repository.
 
@@ -105,7 +105,7 @@ db.createUser(
 ```bash
 > db.Employee.insert([{"Employeeid" : NumberInt(101), "EmployeeName" : "John"}, {"Employeeid" : NumberInt(102), "EmployeeName" : "Clark"}, {"Employeeid" : NumberInt(103), "EmployeeName" : "Martin"}])
 ```
-Here Employee is the Collection name.
+Here **Employee** is the Collection name.
 
 ![App Screenshot](https://github.com/deepakpanda93/Spark_MongoDB_Example/blob/master/src/main/resources/assets/InsertIntoCollection.png?raw=true)
 
