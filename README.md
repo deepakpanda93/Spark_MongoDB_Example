@@ -13,7 +13,7 @@ Access document from MongoDB collection (Read + Write)
 
 MongoDB is a document-based NoSQL database application. Unlike MySQL, it allows data to be stored differently in different documents.
 
-Install MongoDB-4.2 on CentOS 7
+Install mongodb-4.2 on CentOS 7
 
 Step 1: First We need to add the MongoDB Software Repository.
 
@@ -105,7 +105,7 @@ db.createUser(
 ```bash
 > db.Employee.insert([{"Employeeid" : NumberInt(101), "EmployeeName" : "John"}, {"Employeeid" : NumberInt(102), "EmployeeName" : "Clark"}, {"Employeeid" : NumberInt(103), "EmployeeName" : "Martin"}])
 ```
-Here **Employee** is the Collection name.
+Here Employee is the Collection name.
 
 ![App Screenshot](https://github.com/deepakpanda93/Spark_MongoDB_Example/blob/master/src/main/resources/assets/InsertIntoCollection.png?raw=true)
 
@@ -126,7 +126,7 @@ Here **Employee** is the Collection name.
 
 ![App Screenshot](https://github.com/deepakpanda93/Spark_MongoDB_Example/blob/master/src/main/resources/assets/ShowCollectionDocs.png?raw=true)
 
-8. Create a Spark Code file to read/write data from/to MongoDB Collection.
+8. Create a Spark Streaming Code file to read data from Kafka topic and write the required data to Cassandra.
 
 ```javascript
 $ cat SparkMongoExample.scala
@@ -169,7 +169,7 @@ object SparkMongoExample {
 
 ```
 
-9. Prepare a pom.xml file for your project
+4) Prepare a pom.xml file for your project
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -266,6 +266,10 @@ I used InteliJ to run the project. But one can build the project, deploy the JAR
 ### Final output in MongoDB(Employee) Collection
 
 ![App Screenshot](https://github.com/deepakpanda93/Spark_MongoDB_Example/blob/master/src/main/resources/assets/showAllRecord_new.png?raw=true)
+
+### Remove all data from a collection
+
+![App Screenshot](https://github.com/deepakpanda93/Spark_MongoDB_Example/blob/master/src/main/resources/assets/deleteAllRecord.png?raw=true)
 
 ## 🚀 About Me
 
