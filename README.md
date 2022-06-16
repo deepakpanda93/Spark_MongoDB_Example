@@ -126,7 +126,7 @@ Here Employee is the Collection name.
 
 ![App Screenshot](https://github.com/deepakpanda93/Spark_MongoDB_Example/blob/master/src/main/resources/assets/ShowCollectionDocs.png?raw=true)
 
-8. Create a Spark Streaming Code file to read data from Kafka topic and write the required data to Cassandra.
+8. Create a Spark Code file to read/write data from/to MongoDB Collection.
 
 ```javascript
 $ cat SparkMongoExample.scala
